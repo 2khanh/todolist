@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: todolist
+  datasource:
+    url: jdbc:mysql://localhost:3306/todo_app
+    username: khanhln
+    password: kh@nl316Zk12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 1000
+  servlet:
+    context-path: /api/v1
+
+jwt:
+  secret-key: "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcyMTExODcyOSwiaWF0IjoxNzIxMTE4NzI5fQ.hRlJjJemWgTTGnaOYyWGuRQp2cYezmSWRjWJRKr-008"
